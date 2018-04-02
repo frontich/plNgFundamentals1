@@ -13,3 +13,4 @@ _test-output
 _temp
 for-my-eyes-only.txt
 .editorconfig
+app/dummy.ts
