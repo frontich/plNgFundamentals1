@@ -14,3 +14,13 @@ import { Component } from '@angular/core';
 export class NavBarComponent {
 
 }
+
+/**
+ * interpolation vs
+ * property binding
+ * expressions
+ * expression restrictions - can not use assignement operators =, +=, ++ etc
+ *                         - can not use new Keyword to create new objects
+ *                         - expression chaining with ;
+ *                         - cant access anything on the global namespace (console.log)
+ */
