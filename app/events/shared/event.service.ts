@@ -2,8 +2,12 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class EventService {
-    getEvents(){
-      return EVENTS;
+    getEvents() {
+        return EVENTS;
+    }
+
+    getEvent(id: number) {
+        return EVENTS.find(event => event.id === id);
     }
 
 }
@@ -94,7 +98,7 @@ const EVENTS = [
         time: '9:00 am',
         price: 950.00,
         imageUrl: '/app/assets/images/ng-nl.png',
-        onlineUrl:'http://ng-nl.org',
+        onlineUrl: 'http://ng-nl.org',
         sessions: [
             {
                 id: 1,
