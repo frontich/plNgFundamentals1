@@ -8,6 +8,7 @@ export class EventsListResolver implements Resolve<any> {
 
     }
     resolve() {
+        //subscribe returns subscription not observable !!!
         return this.eventService.getEvents().map(events => events);
     }
 }
