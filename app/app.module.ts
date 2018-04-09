@@ -8,6 +8,7 @@ import { EventsAppComponent } from './events-app.component';
 import { EventsListComponent } from './events/events-list.component';
 import { EventThumbnailComponent } from './events/event-thumbnail.component';
 import { EventDetailsComponent } from './events/event-details/event-details.component';
+import { CreateEventComponent } from './events/create-event.component';
 
 import { EventService } from './events/shared/event.service';
 import { ToastrService } from './common/toastr.service';
@@ -20,7 +21,8 @@ import { appRoutes } from './routes';
         EventsAppComponent,
         EventsListComponent,
         EventThumbnailComponent,
-        EventDetailsComponent
+        EventDetailsComponent,
+        CreateEventComponent
     ],
     providers: [EventService, ToastrService],
     imports: [
