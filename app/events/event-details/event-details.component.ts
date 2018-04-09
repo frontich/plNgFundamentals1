@@ -20,6 +20,6 @@ export class EventDetailsComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.eventService.getEvent(1); // hardcoded for now
+       this.event =  this.eventService.getEvent(1); // hardcoded for now
     }
 }
