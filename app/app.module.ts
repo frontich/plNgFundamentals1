@@ -9,6 +9,7 @@ import { EventsListComponent } from './events/events-list.component';
 import { EventThumbnailComponent } from './events/event-thumbnail.component';
 import { EventDetailsComponent } from './events/event-details/event-details.component';
 import { CreateEventComponent } from './events/create-event.component';
+import { Error404Component } from './errors/404.component';
 
 import { EventService } from './events/shared/event.service';
 import { ToastrService } from './common/toastr.service';
@@ -22,7 +23,8 @@ import { appRoutes } from './routes';
         EventsListComponent,
         EventThumbnailComponent,
         EventDetailsComponent,
-        CreateEventComponent
+        CreateEventComponent,
+        Error404Component
     ],
     providers: [EventService, ToastrService],
     imports: [
