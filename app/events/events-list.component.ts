@@ -20,7 +20,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 
 export class EventsListComponent implements OnInit {
-    events: any;
+    events: any[];
 
     constructor(
         private eventService: EventService,
@@ -29,8 +29,8 @@ export class EventsListComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.eventService.getEvents().subscribe(events => { this.events = events });
-        //this.events = this.route.snapshot.data['events'];
+        // this.eventService.getEvents().subscribe(events => { this.events = events });
+        this.events = this.route.snapshot.data['events'];
     }
     handleThumbnailClick(eventName) {
         this.toastr.success(eventName);
