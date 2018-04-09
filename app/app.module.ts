@@ -35,7 +35,7 @@ import { appRoutes } from './routes';
         ToastrService,
         {
             provide: 'canDeactivateCreateEvent',
-            useValue: checkDirtyState
+            useValue: this.checkDirtyState
         }
     ],
     imports: [
@@ -44,8 +44,11 @@ import { appRoutes } from './routes';
     bootstrap: [EventsAppComponent]
 })
 export class AppModule {
+    constructor(){
 
-    function checkDirtyState(component: CreateEventComponent) {
+    }
+
+    checkDirtyState(component: CreateEventComponent) {
     if (component.isDirty)
         return window.confirm('You have not saved this event, do you really want to cancel?');
     return true;
